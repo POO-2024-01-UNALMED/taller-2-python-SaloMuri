@@ -28,12 +28,14 @@ class Auto:
 
         
     def verificarIntegridad(self):
+        registros = set()
+        registros.add(self.registro)
         for asiento in self.asientos:
             if asiento != None:
-                if asiento != self.registro:
-                    return "Las piezas no son originales"
-            else:
-                return "Auto original"
+                registros.add(asiento.registro)
+
+        if len(registros) == 1:
+            return "Auto original"
         else:
             return "Las piezas no son originales"
 
