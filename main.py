@@ -21,11 +21,9 @@ class Auto:
 
     def cantidadAsientos(self):
         numeroAsientos = 0
-        i = 0
-        for i in i < len(self.asientos):
-            if (self.asientos[i] != ""):
+        for asiento in self.asientos:
+            if asiento != "":
                 numeroAsientos += 1
-                i += 1
         return numeroAsientos
         
     def verificarIntegridad(self):
