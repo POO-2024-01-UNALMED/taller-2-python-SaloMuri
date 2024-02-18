@@ -21,11 +21,12 @@ class Auto:
 
     def cantidadAsientos(self):
         asientosReales = 0
+        i = 0
         cantidadVeces = len(self.asientos)
-        for asiento in cantidadVeces:
-            if asiento != "":
+        for i  in i < cantidadVeces:
+            if i != "":
                 asientosReales += 1
-
+            i += 1
         return asientosReales
 
         
@@ -36,9 +37,10 @@ class Auto:
                 if self.asientos[i] != "":
                     if self.asientos[i] != self.registro:
                         return "Las piezas no son originales"
-            return "Auto original"
-        else:
-            return "Las piezas no son originales"
+                else:
+                    return "Auto original"
+            else:
+                return "Las piezas no son originales"
 
 
 
