@@ -21,6 +21,7 @@ class Auto:
 
     def cantidadAsientos(self):
         numeroAsientos = 0
+        i = 0
         for i in i < len(self.asientos):
             if (self.asientos[i] != ""):
                 numeroAsientos += 1
