@@ -33,7 +33,6 @@ class Auto:
         for asiento in self.asientos:
             if asiento != None:
                 registros.add(asiento.registro)
-
         if len(registros) == 1:
             return "Auto original"
         else:
